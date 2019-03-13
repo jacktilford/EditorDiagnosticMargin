@@ -46,6 +46,11 @@ namespace DiagnosticMargin
             this.editorFactory = editorFactory;
         }
 
+        public UIElement UI
+        {
+            get { return this; }
+        }
+
         public void Activate()
         {
             foreach (ITextBuffer buffer in this.textView.BufferGraph.GetTextBuffers((b) => true))
@@ -90,11 +95,6 @@ namespace DiagnosticMargin
         public void Close()
         {
             Inactivate();
-        }
-
-        public UIElement UI
-        {
-            get { return this; }
         }
 
         private void OnGraphBuffersChanged(object sender, GraphBuffersChangedEventArgs e)
