@@ -82,6 +82,7 @@ namespace DiagnosticMargin
 
         public void Inactivate()
         {
+            //this.textView.BufferGraph.GraphBuffersChanged -= OnGraphBuffersChanged;
             this.textView.BufferGraph.GraphBuffersChanged -= OnGraphBuffersChanged;
             foreach (var pair in this.barMap)
             {
