@@ -1,14 +1,11 @@
-// Copyright (c) Microsoft Corporation
-// All rights reserved
-
-using System;
-using System.Collections.Generic;
-using System.ComponentModel.Composition;
-using System.Windows.Media;
 using Microsoft.VisualStudio.Text;
 using Microsoft.VisualStudio.Text.Classification;
 using Microsoft.VisualStudio.Text.Tagging;
 using Microsoft.VisualStudio.Utilities;
+using System;
+using System.Collections.Generic;
+using System.ComponentModel.Composition;
+using System.Windows.Media;
 
 namespace DiagnosticMargin
 {
@@ -19,8 +16,10 @@ namespace DiagnosticMargin
         public RorMarkerDefinition()
         {
             ZOrder = 1;
-            Fill = new SolidColorBrush(Colors.Khaki);
-            Fill.Opacity = 0.35;
+            Fill = new SolidColorBrush(Colors.Khaki)
+            {
+                Opacity = 0.35
+            };
             Border = new Pen(new SolidColorBrush(Colors.DarkGray), 0.5);
             Fill.Freeze();
             Border.Freeze();
@@ -92,11 +91,7 @@ namespace DiagnosticMargin
 
         private void OnReadOnlyRegionsChanged(object sender, SnapshotSpanEventArgs args)
         {
-            EventHandler<SnapshotSpanEventArgs> handler = TagsChanged;
-            if (handler != null)
-            {
-                handler(this, args);
-            }
+            TagsChanged?.Invoke(this, args);
         }
 
         public event EventHandler<SnapshotSpanEventArgs> TagsChanged;

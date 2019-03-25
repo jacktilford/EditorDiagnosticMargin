@@ -1,7 +1,6 @@
-﻿using System;
+﻿using Microsoft.VisualStudio.Utilities;
+using System;
 using System.Collections.Generic;
-using System.Text;
-using Microsoft.VisualStudio.Utilities;
 using System.Windows;
 using System.Windows.Controls;
 
