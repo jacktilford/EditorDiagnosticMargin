@@ -1,4 +1,5 @@
-﻿using Microsoft.VisualStudio.Text;
+﻿// here's a comment at the top
+using Microsoft.VisualStudio.Text;
 using Microsoft.VisualStudio.Text.Editor;
 using Microsoft.VisualStudio.Text.Operations;
 using Microsoft.VisualStudio.Text.Projection;
