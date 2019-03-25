@@ -1,8 +1,8 @@
-﻿using System;
+﻿using Microsoft.VisualStudio.Text.Editor;
+using System;
 using System.Collections.Generic;
 using System.Windows;
 using System.Windows.Controls;
-using Microsoft.VisualStudio.Text.Editor;
 using System.Windows.Media;
 
 namespace DiagnosticMargin

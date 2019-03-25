@@ -1,7 +1,7 @@
-﻿using System.ComponentModel.Composition;
-using Microsoft.VisualStudio.Text.Editor;
+﻿using Microsoft.VisualStudio.Text.Editor;
 using Microsoft.VisualStudio.Text.Operations;
 using Microsoft.VisualStudio.Utilities;
+using System.ComponentModel.Composition;
 
 namespace DiagnosticMargin
 {

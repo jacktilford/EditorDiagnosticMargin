@@ -1,12 +1,12 @@
-﻿using System.ComponentModel.Composition;
-using System.Windows;
-using System.Windows.Controls;
+﻿using Microsoft.VisualStudio.Text;
 using Microsoft.VisualStudio.Text.Editor;
+using Microsoft.VisualStudio.Text.Operations;
+using Microsoft.VisualStudio.Text.Projection;
 using Microsoft.VisualStudio.Utilities;
 using System.Collections.Generic;
-using Microsoft.VisualStudio.Text.Projection;
-using Microsoft.VisualStudio.Text;
-using Microsoft.VisualStudio.Text.Operations;
+using System.ComponentModel.Composition;
+using System.Windows;
+using System.Windows.Controls;
 
 namespace DiagnosticMargin
 {
