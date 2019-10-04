@@ -8,6 +8,8 @@ using Microsoft.VisualStudio.Text.Projection;
 using Microsoft.VisualStudio.Text;
 using Microsoft.VisualStudio.Text.Operations;
 
+// change in master branch
+
 namespace DiagnosticMargin
 {
     [Export(typeof(IDiagnosticPanelFactory))]
