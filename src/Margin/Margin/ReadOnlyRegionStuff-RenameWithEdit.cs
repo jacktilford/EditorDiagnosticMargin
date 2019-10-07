@@ -13,6 +13,8 @@ namespace DiagnosticMargin
     [Name("ReadOnlyRegion")]
     internal sealed class RorMarkerDefinition : MarkerFormatDefinition
     {
+        // here is the edit!!
+
         public RorMarkerDefinition()
         {
             ZOrder = 1;

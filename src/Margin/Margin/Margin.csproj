@@ -55,8 +55,8 @@
     <Compile Include="PerformancePanel.xaml.cs" />
     <Compile Include="PerformancePanelFactory.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="PropertyDumper.cs" />
-    <Compile Include="ReadOnlyRegionStuff.cs" />
+    <Compile Include="PropertyDumper-RenameNoEdit.cs" />
+    <Compile Include="ReadOnlyRegionStuff-RenameWithEdit.cs" />
     <Compile Include="TagPanel.xaml.cs" />
     <Compile Include="TagPanelFactory.cs" />
     <Compile Include="ViewPanel.xaml.cs" />
